@@ -1,0 +1,146 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mon Amour One';
+  src: url('../fonts/mon_amour_one_medium.woff2') format('woff2');
+  src: url('../fonts/mon_amour_one_medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monotype Corsiva';
+  src: url('../fonts/monotype_corsiva.woff2') format('woff2');
+  src: url('../fonts/monotype_corsiva.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lobster Regular';
+  src: url('../fonts/lobster_regular.woff2') format('woff2');
+  src: url('../fonts/lobster_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Marck Script';
+  src: url('../fonts/marck_script.woff2') format('woff2');
+  src: url('../fonts/marck_script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pacifico Regular';
+  src: url('../fonts/pacifico_regular.woff2') format('woff2');
+  src: url('../fonts/pacifico_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Round Script';
+  src: url('../fonts/round_script_italic.woff2') format('woff2');
+  src: url('../fonts/round_script_italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe Print';
+  src: url('../fonts/segoe_print.woff2') format('woff2');
+  src: url('../fonts/segoe_print.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Snellroundhand';
+  src: url('../fonts/snellroundhand-black.woff2') format('woff2');
+  src: url('../fonts/snellroundhand-black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calligraphia Two';
+  src: url('../fonts/calligraphia_two.woff2') format('woff2');
+  src: url('../fonts/calligraphia_two.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Champignon Script';
+  src: url('../fonts/champignon_script.woff2') format('woff2');
+  src: url('../fonts/champignon_script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'English Script';
+  src: url('../fonts/english_script.woff2') format('woff2');
+  src: url('../fonts/english_script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gabriola';
+  src: url('../fonts/gabriola.woff2') format('woff2');
+  src: url('../fonts/gabriola.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Haettenschweiler';
+  src: url('../fonts/haettenschweiler.woff2') format('woff2');
+  src: url('../fonts/haettenschweiler.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/impact.woff2') format('woff2');
+  src: url('../fonts/impact.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monly Lite';
+    src: url('../fonts/Monlylitebold.woff2') format('woff2');
+    src: url('../fonts/Monlylitebold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+
+
+
+
