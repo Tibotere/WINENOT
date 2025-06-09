@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа | wine.not.pmr</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="images/logo.jpg">
+  <!-- Font Awesome для иконок -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Логотип wine.not.pmr">
+        <h1>wine.not.pmr</h1>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+        <a href="catalog.html"><i class="fas fa-wine-glass-alt"></i> Каталог</a>
+        <a href="gallery.html"><i class="fas fa-images"></i> Галерея</a>
+        <a href="designer.html"><i class="fas fa-pen-fancy"></i> Конструктор</a>
+        <a href="order.html" class="active"><i class="fas fa-shopping-cart"></i> Заказ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1><i class="fas fa-file-invoice"></i> Оформление заказа</h1>
+
+      <div class="order-summary">
+        <h2><i class="fas fa-list-check"></i> Ваш заказ:</h2>
+        <div class="preview-wrapper">
+          <div class="preview-box">
+            <h3><i class="fas fa-wine-glass"></i> Выбранный бокал</h3>
+            <div class="canvas-container">
+              <canvas id="glass-preview"></canvas>
+            </div>
+            <p id="glass-type-info" class="glass-info"></p>
+          </div>
+          <div class="preview-box">
+            <h3><i class="fas fa-paint-brush"></i> Ваш дизайн</h3>
+            <div class="canvas-container">
+              <canvas id="design-preview"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="order-form">
+        <div class="form-section">
+          <h3><i class="fas fa-user-circle"></i> Контактные данные</h3>
+
+          <div class="form-group">
+            <label for="name" class="required-field">Имя</label>
+            <input type="text" id="name" name="name" class="form-control"
+                   placeholder="Как к вам обращаться?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="required-field">Телефон</label>
+            <input type="tel" id="phone" name="phone" class="form-control"
+                   placeholder="+373 (__) ______" required>
+          </div>
+
+          <div class="form-group">
+            <label for="social" class="required-field">Instagram/Telegram</label>
+            <input type="text" id="social" name="social" class="form-control"
+                   placeholder="@username" required>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3><i class="fas fa-truck"></i> Доставка</h3>
+          <div class="form-group">
+            <label for="address">Адрес доставки (Отделением экспресс почты)</label>
+            <textarea id="address" name="address" class="form-control" rows="2"
+                      placeholder="Город, Ф.И.О, номер телефона получателя"></textarea>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3><i class="fas fa-comment-dots"></i> Дополнительно</h3>
+          <div class="form-group">
+            <label for="comments">Ваши пожелания</label>
+            <textarea id="comments" name="comments" class="form-control" rows="3"
+                      placeholder="Особенности заказа, пожелания по доставке..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn tool-button">
+          <span class="spinner"><i class="fas fa-spinner fa-spin"></i></span>
+          <span class="btn-text">Подтвердить заказ</span>
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Уведомление об отправке -->
+  <div id="notification" class="notification">
+    <i class="fas fa-check-circle"></i> Заказ успешно отправлен!
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 wine.not.pmr - Персонализированные бокалы с гравировкой</p>
+      <div class="social-links">
+        <a href="https://instagram.com/wine.not.pmr"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fabric.js для работы с canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+  <!-- Основной скрипт -->
+  <script src="scripts/order.js"></script>
+  <script src="scripts/chatbot.js"></script>
+</body>
+</html>

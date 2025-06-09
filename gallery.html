@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея работ | wine.not.pmr</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Логотип wine.not.pmr">
+        <h1>wine.not.pmr</h1>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+        <a href="catalog.html"><i class="fas fa-wine-glass-alt"></i> Каталог</a>
+        <a href="gallery.html" class="active"><i class="fas fa-images"></i> Галерея</a>
+        <a href="designer.html"><i class="fas fa-pen-fancy"></i> Конструктор</a>
+        <a href="order.html"><i class="fas fa-shopping-cart"></i> Заказ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="gallery-main">
+    <div class="container">
+      <div class="page-header">
+        <h1>Наши работы</h1>
+        <p>Примеры выполненных заказов с гравировкой</p>
+      </div>
+
+      <div class="instagram-gallery">
+        <!-- Генерируется через JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Модальное окно для просмотра изображений -->
+  <div id="gallery-modal" class="gallery-modal">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-image-container">
+          <img id="modal-image" src="" alt="" class="modal-image">
+        </div>
+        <div class="modal-info">
+          <div class="info-header">
+            <h3 id="image-title"></h3>
+            <p id="image-description"></p>
+          </div>
+          <div class="info-details">
+            <div class="detail-item">
+              <i class="fas fa-wine-glass-alt"></i>
+              <span id="image-type"></span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="image-date"></span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-pen-fancy"></i>
+              <span id="image-style"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 wine.not.pmr - Персонализированные бокалы с гравировкой</p>
+      <div class="social-links">
+        <a href="https://instagram.com/wine.not.pmr">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/chatbot.js"></script>
+  <script src="scripts/gallery.js"></script>
+</body>
+</html>
